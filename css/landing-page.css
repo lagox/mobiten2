@@ -4,7 +4,7 @@ body, html {
 }
 
 body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 }
 
@@ -14,28 +14,28 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-header {
-	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 50px;
+	padding-top: 30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 30px;
 	color: #f8f8f8;
-	background: url(../img/test1.jpg) no-repeat center center;
+	background: url(../img/mainhead.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
 
 .intro-message {
 	position: relative;
-	padding-top: 20%;
-	padding-bottom: 20%;
+	padding-top: 6%;
+	padding-bottom: 18%;
 }
 .wrapper-for-zagolovok{
-	/*background-color: rgba(0,0,0,0.2);
 	color: #fff;
-	padding: 5px 0px;*/
+	padding: 50px 10px;
 }
 .intro-message > .wrapper-for-zagolovok > h1 {
 	margin: 0;
-	/*font-weight: normal;*/
-	font-size: 5em;
+	font-weight: normal;
+	font-size: 3.5em;
+	color:#fff;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
@@ -46,9 +46,10 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-message > .wrapper-for-zagolovok > h3 {
-	font-size: 35px;
+	font-size: 25px;
+	font-weight: normal;
+	color:#fff;
 	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-	/*font-weight: normal;*/
 }
 
 @media (max-width: 767px) {
@@ -83,8 +84,8 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .content-section-a {
-	background-color: #f8f8f8;
-	padding: 50px 0;
+	background-color: #fff;
+	padding: 30px 0;
 }
 
 .content-section-b {
@@ -165,16 +166,114 @@ p.copyright {
 	/*font-weight: normal;*/
 	color:#000 !important;
 	text-decoration: underline;
+	margin-top: 15px;
 }
 .navbar-brand:hover{
 	text-decoration: none;
 }
+.navbar-nav{
+	margin-top: 18px;
+}
 .navbar-nav a{
 	font-weight: normal;
 }
-.descriptor-for-site{
+.descriptor-site{
 	font-weight: normal;
-	font-size: 18px;
-	margin-top:13px;
-	margin-left:-10px;
+	font-size: 14px;
+	color:#dfdfdf;
+}
+#logotip-link{
+	font-size: 22px;
+	font-weight:normal;
+	color:#fff
+}
+#logo{
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+	padding: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#top-contacts{
+	color: #fff;	
+}
+#top-contacts > .phone-number{
+	font-size:22px;
+}
+#top-contacts > .email-top > a{
+	font-weight: normal;
+	color:#fff;
+}
+.phone-number-descript{
+	font-weight:normal;
+	font-size:12px;
+	line-height: 10px;
+}
+#request-call-button{
+	color:#000;
+}
+.services{
+	/*height:700px;*/
+}
+.services-title{
+	text-align: center;
+	font-weight: normal;
+	font-size: 3em;
+	color:#000;
+	margin-bottom: 40px;
+}
+.services ul{
+	list-style-type:none;
+	text-align: center;
+	margin-top: 40px;
+}
+.services ul li{
+	float: left;
+	width:30%;
+	height:160px;
+	/*outline: 1px solid #ccc;*/
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background: #f1f1f1;
+	/*border:1px solid #ccc;*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 20px 20px;
+}
+.services h2{
+	font-weight: normal;
+	font-size: 18px !important;
+	line-height: 26px;
+	/*display: inline-block;*/
+}
+.design-free{
+	background: url(../img/ipad_timesheet_office.png) no-repeat center center;
+	background-size: cover;
+	text-align: center;	
+	height:700px;
+	margin-top:50px;
+}
+.design-free-title{
+	text-align: center;
+	font-weight: normal;
+	font-size: 3em;
+	color:#fff;
+	padding: 20px 10px;
+	border:#fff 7px solid;
+	background-color: rgba(0,0,0,0.5);
+}
+.design-free-button{
+	text-align: center;
+}
+#request-free-design{
+	/*margin-top:30px;*/
+	position: relative;
+	top:100px;
+}
+#request-free-design img{
+	width:30px;
+	margin-right: 10px;
 }
