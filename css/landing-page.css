@@ -17,7 +17,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	padding-top: 30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 30px;
 	color: #f8f8f8;
-	background: url(../img/mainhead.jpg) no-repeat center center;
+	background: url(../img/ios_7_galaxy-1280x960.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
@@ -30,6 +30,8 @@ body, h1, h2, h3, h4, h5, h6 {
 .wrapper-for-zagolovok{
 	color: #fff;
 	padding: 50px 10px;
+	background-color: rgba(0,0,0,0.2);
+	border: 7px solid #fff;
 }
 .intro-message > .wrapper-for-zagolovok > h1 {
 	margin: 0;
@@ -37,7 +39,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-size: 3.5em;
 	line-height: 50px;
 	color:#fff;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
 }
 
 .intro-divider {
@@ -50,7 +52,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-size: 25px;
 	font-weight: normal;
 	color:#fff;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
 }
 
 @media (max-width: 767px) {
@@ -214,67 +216,63 @@ p.copyright {
 #request-call-button{
 	color:#000;
 }
+#request-call-button-2{
+color:#000;	
+}
 .services{
 	/*height:700px;*/
 }
 .services-title{
 	text-align: center;
-	font-weight: normal;
-	font-size: 3em;
-	line-height: 50px;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
 	color:#000;
-	margin-bottom: 40px;
+	margin-bottom:10px;
 }
 .services ul{
 	list-style-type:none;
 	text-align: center;
-	margin-top: 40px;
-}
-.services ul li{
-	float: left;
-	width:30%;
-	height:160px;
-	/*outline: 1px solid #ccc;*/
-	margin-right: 20px;
-	margin-bottom: 20px;
 	margin-top: 20px;
-	background: #f1f1f1;
-	/*border:1px solid #ccc;*/
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	padding: 20px 20px;
+}
+.services-list{
+	text-align: center;
+	margin-top: 40px;
+	/*outline: 1px solid #ccc;*/
+}
+.services-list .col-lg-4{
+	margin-bottom: 20px;
 }
 .services h2{
 	font-weight: normal;
-	font-size: 18px !important;
+	font-size: 1.2em !important;
 	line-height: 26px;
 	/*display: inline-block;*/
 }
 .design-free{
-	background: url(../img/ipad_timesheet_office.jpg) no-repeat center center;
-	background-size: cover;
+	/*background: url(../img/test3.jpg) no-repeat center center;*/
+	/*background-size: cover;*/
 	text-align: center;	
-	height:700px;
-	margin-top:50px;
+	/*height:400px;*/
+	margin-top:10px;
+	padding-top: 20px;
+	background: #f8f8f8;
 }
 .design-free-title{
 	text-align: center;
-	font-weight: normal;
-	font-size: 3em;
-	line-height: 50px;
-	color:#fff;
-	padding: 20px 10px;
-	border:#fff 4px solid;
-	background-color: rgba(0,0,0,0.2);
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	/*padding: 20px 10px;*/
+	/*border:#fff 4px solid;*/
+	/*background-color: rgba(0,0,0,0.7);*/
 }
 .design-free-button{
 	text-align: center;
 }
 #request-free-design{
-	/*margin-top:30px;*/
-	position: relative;
-	top:180px;
+	margin-top:30px;
 	padding: 20px 60px;
 	font-size: 30px;
 }
@@ -286,46 +284,276 @@ p.copyright {
 	text-align: center;	
 	/*height:700px;*/
 	/*outline: 1px solid #ccc;*/
-	padding-bottom: 150px;
+	/*padding-bottom: 50px;*/
 }
 .app-store img{
-	width:50%;
-	margin-top:60px;
+	width:30%;
+	margin-top:20px;
 }
 .app-store-title{
 	text-align: center;
-	font-weight: normal;
-	font-size: 3em;
-	line-height: 50px;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
 	color:#000;
-	padding: 20px 10px;
+	/*padding: 20px 10px;*/
 	margin-bottom: 40px;
+	margin-top:20px;
 	/*border:#7b7b7b 7px solid;*/
 	/*background-color: rgba(0,0,0,0.3);*/
 }
 .conf{
 	text-align: center;	
 	/*height:700px;*/
-	outline: 1px solid #ccc;
-	padding-bottom: 150px;
+	/*outline: 1px solid #ccc;*/
+	/*padding-bottom: 50px;*/
+	background: #f8f8f8;
 }
 .conf img{
 	width:20%;
-	margin-top:10px;
+	margin-top:20px;
 }
 .conf-title{
 	text-align: center;
-	font-weight: normal;
-	font-size: 3em;
-	line-height: 50px;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
 	color:#000;
-	padding: 20px 10px;
+	/*padding: 20px 10px;*/
 	margin-bottom: 20px;
 }
 .conf-desc{
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: normal;
-	width:45%;
+	width:75%;
 	margin:20px auto 20px auto;
+}
+.one-c{
+	text-align: center;	
+	/*height:700px;*/
+	/*outline: 1px solid #ccc;*/
+	padding-bottom: 50px;
+}
+.one-c img{
+	width:20%;
+	margin-top:20px;
+}
+.one-c-title{
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+}
+.one-c-desc{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	width:75%;
+	margin:20px auto 20px auto;
+}
+.support{
+	text-align: center;	
+	/*height:700px;*/
+	/*outline: 1px solid #ccc;*/
+	/*padding-bottom: 50px;*/
+}
+.support img{
+	width:25%;
+	margin-top:20px;
+}
+.support-title{
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	/*padding: 20px 10px;*/
+	margin-bottom: 20px;
+}
+.support-desc{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	width:75%;
+	margin:20px auto 20px auto;
+}
+.vigoda{
+	text-align: center;	
+	/*height:700px;*/
+	/*outline: 1px solid #ccc;*/
+	/*padding-bottom: 50px;*/
+	background: #f8f8f8;
+}
+.vigoda-title{
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	/*padding: 20px 10px;*/
+	margin-bottom: 50px;
+	/*border: 4px solid #000;*/
+}
+.portfolio{
+	/*outline: 1px solid #ccc;*/
+	/*padding-top: 10px;*/
+	margin-top: 0px !important;
+	padding-top: 20px !important;
+}
+.portfolio-title{
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	margin-bottom: 10px;	
+}
+.list-jobs{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.list-jobs h2{
+	font-weight: normal;
+	font-size: 22px;
+	color:#63635e;
+	margin-bottom: 20px;
+}
+.list-jobs .desc{
+	font-weight: normal;
+	margin-top: 20px;
+}
+.list-jobs img{
+	border:2px solid #eee;
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+.without-border{
+	border:none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.clear{
+	clear: both;
+}
+.tech{
+	margin-top: 0px !important;
+	padding-top: 20px !important;
+	text-align: center;	
+	background: #f8f8f8;
+}
+.tech-title{
+text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	/*padding: 20px 10px;*/
+	margin-bottom: 50px;
+	/*border: 4px solid #000;*/	
+}
+.list-tech-item{
+	text-align: center;
+}
+.list-tech-item .tech-item{
+	float: left;
+	margin: 10px 35px;
+}
+.tech-item-title{
+	margin-top: 20px;
+	text-align: center;
+	font-weight: normal;
+	font-size:20px;
+	color:#6b6a67;
+}
+.customers{
+	margin-top: 0px !important;
+	padding-top: 20px !important;
+	text-align: center;		
+}
+.customers-title{
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	/*padding: 20px 10px;*/
+	margin-bottom: 50px;
+	/*border: 4px solid #000;*/
+}
+.customers .col-lg-3{
+	margin-bottom: 20px;
+}
+.main-form{
+	margin-top: 0px !important;
+	padding-top: 40px !important;
+	text-align: center;			
+	background: #f8f8f8;
+}
+.main-form-title{
+	text-align: center;
+	font-weight: 600;
+	font-size: 3em;
+	line-height: 45px;
+	color:#000;
+	padding: 20px 0px;
+	margin-bottom: 10px;
+	/*border: 4px solid #000;*/	
+}
+.self-main-form{
+	/*outline: 1px solid #ccc;*/
+	padding: 20px;
+	border: 2px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
+box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+.contacts{
+	margin-top: 0px !important;
+	padding-top: 20px !important;
+	text-align: left;	
+}
+.contacts-title{
+		text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	/*padding: 20px 10px;*/
+	margin-bottom: 50px;
+	/*border: 4px solid #000;*/
+}
+.moscow{
+	margin-top:50px;
+}
+.city-title{
+	font-size:25px;
+	text-align: center;
+	font-weight: normal;
+}
+.contacts-self-block{
+	/*outline: 1px solid #ccc;*/
+	font-weight: normal;
+	margin-top:150px;
+	font-size:25px;
+}
+.foot{
+	text-align: center;
+}
+.foot-phone{
+	margin-bottom: 10px; 
+	font-weight: normal;
+	font-size: 20px;
+}
+.copy{
+	margin-top: 10px;
+	font-weight: normal;
 }
