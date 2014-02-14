@@ -15,9 +15,9 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .intro-header {
 	padding-top: 30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 30px;
-	color: #f8f8f8;
-	background: url(../img/ios_7_galaxy-1280x960.jpg) no-repeat center center;
+	padding-bottom: 10px;
+	color: #000;
+	background: url(../img/apple-imac-office-hi-tech-hd-wallpaper.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
@@ -29,9 +29,9 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .wrapper-for-zagolovok{
 	color: #fff;
-	padding: 50px 10px;
-	background-color: rgba(0,0,0,0.3);
-	border: 4px solid #fff;
+	padding: 40px 10px;
+	background-color: rgba(0,0,0,0.5);
+	border:7px solid #fff;
 }
 .intro-message > .wrapper-for-zagolovok > h1 {
 	margin: 0;
@@ -183,7 +183,7 @@ p.copyright {
 .descriptor-site{
 	font-weight: normal;
 	font-size: 14px;
-	color:#dfdfdf;
+	color:#fff;
 }
 #logotip-link{
 	font-size: 22px;
@@ -191,12 +191,13 @@ p.copyright {
 	color:#fff
 }
 #logo{
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.4);
 	color: #fff;
 	padding: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+	margin-bottom: 20px;
 }
 #top-contacts{
 	color: #fff;	
