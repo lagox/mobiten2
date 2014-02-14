@@ -1,10 +1,25 @@
+@import "http://webfonts.ru/import/arsenal.css";
+@import "http://webfonts.ru/import/fira.css";
+@import "http://webfonts.ru/import/modernh.css";
+@import "http://webfonts.ru/import/neris.css";
+
 body, html {
 	height: 100%;
 	width: 100%;
 }
 
+body
+{
+    padding-top: 50px;
+}
+
 body, h1, h2, h3, h4, h5, h6 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: 'Arsenal';*/
+    font-family: 'Fira Sans';
+    /*font-family: 'ModernH';*/
+    /*font-family: 'Neris';*/
+
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-weight: 700;
 }
 
@@ -31,7 +46,11 @@ body, h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	padding: 40px 10px;
 	background-color: rgba(0,0,0,0.5);
-	border:7px solid #fff;
+	/*border:7px solid #fff;*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 .intro-message > .wrapper-for-zagolovok > h1 {
 	margin: 0;
@@ -165,21 +184,21 @@ p.copyright {
 
 
 /*custom styles*/
-.navbar-brand{
+/*.navbar-brand{*/
 	/*font-weight: normal;*/
-	color:#000 !important;
-	text-decoration: underline;
-	margin-top: 15px;
-}
-.navbar-brand:hover{
-	text-decoration: none;
-}
-.navbar-nav{
-	margin-top: 18px;
-}
-.navbar-nav a{
-	font-weight: normal;
-}
+	/*color:#000 !important;*/
+	/*text-decoration: underline;*/
+	/*margin-top: 15px;*/
+/*}*/
+/*.navbar-brand:hover{*/
+	/*text-decoration: none;*/
+/*}*/
+/*.navbar-nav{*/
+	/*margin-top: 18px;*/
+/*}*/
+/*.navbar-nav a{*/
+	/*font-weight: normal;*/
+/*}*/
 .descriptor-site{
 	font-weight: normal;
 	font-size: 14px;
@@ -464,6 +483,7 @@ text-align: center;
 .list-tech-item .tech-item{
 	float: left;
 	margin: 10px 34px;
+    height: 148px;
 }
 .tech-item-title{
 	margin-top: 20px;
@@ -600,4 +620,25 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	padding: 0px 5px;
 	display: inline-block;
 	font-weight: 600;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #f5f5f5;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: dimgray;
+}
+
+.shadow
+{
+    /*background: #fc0;*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /*padding: 10px;*/
+}
+
+.scroll-navigation-item
+{
+    margin-top: 20px;
 }
