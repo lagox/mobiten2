@@ -557,3 +557,40 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	margin-top: 10px;
 	font-weight: normal;
 }
+.warning-black{
+	color:#000;
+	margin-top: 5px;
+	font-weight: bold;
+}
+.warning-black:hover{
+	color:#676765;
+}
+.modal-dialog-center {
+    margin-top: 15%;
+}
+.antspro-modal{
+	text-align: center;
+}
+.antspro-modal h3{
+	font-size: 20px;
+	font-weight: 500;
+	color:#676765;
+	margin-top:5px;
+}
+.antspro-modal-form{
+	margin:20px auto;
+	width:50%;
+}
+.antspro-modal-form input[type='text'], input[type='email'], textarea{
+	
+}
+.confide-modal{
+	font-size:11px;
+	font-weight: normal;
+}
+.confide-modal img{
+	position: relative;
+	top:-3px;
+	width:10px;
+	height:10px;
+}

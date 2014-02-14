@@ -26,17 +26,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2" id="logo">
-                    <a id="logotip-link" href="index.html">Mobiten</a>
+                    <a id="logotip-link" href="index.html">Ants Pro</a>
                     <p class="descriptor-site">Мобильные решения</p>
                 </div>
                 <div class="col-lg-2 col-lg-offset-8" id="top-contacts">
                     <p class="phone-number-descript">Есть вопросы? Звони!</p>
                     <p class="phone-number">8 707 377 10 71</p>
                     <p class="request-call-block">
-                        <button type="button" class="btn btn-warning" id="request-call-button"><img src="img/tube.png"> Закажи звонок</button>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png"> Закажи звонок</button>
                     </p>
                     <p class="email-top">
-                        <a href="mailto:dev@mobile5.kz">support@mobiten.me</a>
+                        <a href="mailto:dev@mobile5.kz">support@antspro.com</a>
                     </p>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                     <h1 class="design-free-title">Дизайн приложения мы дарим бесплатно</h1>
                 </div>
                 <div class="col-lg-12 design-free-button">
-                    <button type="button" class="btn btn-primary btn-lg" id="request-free-design"><img src="img/arr.png"> Заказать</button><br />
+                    <button type="button" class="btn btn-primary btn-lg" id="request-free-design" data-toggle="modal" data-target="#requestCallModal" ><img src="img/arr.png"> Заказать</button><br />
                 </div>
 
             </div>
@@ -279,15 +279,15 @@
             <div class="row">
                 <div class="col-lg-4">&nbsp;</div>
                 <div class="col-lg-4">
-                    <form action="" role="form">
+                    <form action="request_price.php" method="post" autocomplete="off" role="form">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="vigoda-name" placeholder="Введите имя*">
+                            <input type="text" class="form-control" placeholder="Введите имя*" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="vigoda-email" placeholder="Введите email*">
+                            <input type="email" class="form-control" placeholder="Введите email*" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="vigoda-phone" placeholder="Введите телефон*">
+                            <input type="text" class="form-control" placeholder="Введите телефон*" required>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-danger btn-lg">Заказать расчет стоимости</button>
@@ -426,15 +426,15 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6 self-main-form">
-                    <form action="" role="form">
+                    <form action="request_price.php" method="post" autocomplete="off" role="form">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="vigoda-name" placeholder="Введите имя*">
+                            <input type="text" class="form-control" placeholder="Введите имя*" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="vigoda-email" placeholder="Введите email*">
+                            <input type="email" class="form-control" placeholder="Введите email*" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="vigoda-phone" placeholder="Введите телефон*">
+                            <input type="text" class="form-control" placeholder="Введите телефон*" required>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-danger btn-lg">Заказать расчет стоимости</button>
@@ -468,7 +468,7 @@
                 </div>
                 <div class="col-lg-7 contacts-self-block">
                     моб.тел.: +7 707 377 10 71<br />
-                    e-mail: <a href="mailto:astana@mobiten.me">astana@mobiten.me</a><br />
+                    e-mail: <a href="mailto:antspro.com">astana@antspro.com</a><br />
                     spype: lagox.skype
                 </div>
             </div>
@@ -479,11 +479,10 @@
                 </div>
                 <div class="col-lg-7 contacts-self-block">
                     моб.тел.: +7 707 377 10 71<br />
-                    e-mail: <a href="mailto:moscow@mobiten.me">moscow@mobiten.me</a><br />
+                    e-mail: <a href="mailto:moscow@antspro.com">moscow@antspro.com</a><br />
                     spype: lagox.skype
                 </div>
             </div>
-            
         </div>
         <!-- /.container -->
 
@@ -494,14 +493,49 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="foot-phone">8 707 377 10 71</div>
-                    <button type="button" class="btn btn-warning btn-lg" id="request-call-button-2"><img src="img/tube.png"> Закажи звонок</button>
+                    <button type="button" class="btn btn-warning btn-lg" id="request-call-button-2" data-toggle="modal" data-target="#requestCallModal" ><img src="img/tube.png"> Закажи звонок</button>
                     <div class="copy">
-                        mobiten.me &copy; 2012-2014
+                        Ants Pro &copy; 2012-2014
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- modal windows -->
+
+    <!-- request call -->
+    <div class="modal fade" id="requestCallModal">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body antspro-modal">
+            <h3>Заказать звонок</h3>
+            <div class="antspro-modal-form">
+                <form action="request_call.php" method="post" autocomplete="off" role="form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Введите имя*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Введите email*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phone" class="form-control" placeholder="Введите телефон*" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-warning warning-black">Заказать</button>
+                        </div>
+                    </form>
+                    <div class="confide-modal">
+                         <img src="img/lockicon.png"> Ваши контактные данные в безопасности и не будут переданы третьим лицам
+                    </div>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
