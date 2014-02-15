@@ -19,13 +19,33 @@
     <!-- Add custom CSS here -->
     <link href="css/landing-page.css" rel="stylesheet">
 
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
 </head>
 
-<body>
+<body id="body">
+    <button class="btn btn-info" id="collapsizer">
+        <span class="glyphicon glyphicon-th"></span> Меню
+    </button>
+    <nav class="navbar navbar-fixed-top navbar-inverse shadow scroll-header" role="navigation">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li class="active"><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#body">Главная</a></li>
+                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#services">Услуги</a></li>
+                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#techs">Технологии</a></li>
+                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#works">Портфолио</a></li>
+                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#clients">Наши клиенты</a></li>
+                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="intro-header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2" id="logo">
+                <div class="col-lg-2 shadow" id="logo">
                     <a id="logotip-link" href="index.html">Ants Pro</a>
                     <p class="descriptor-site">Мобильные решения</p>
                 </div>
@@ -36,14 +56,14 @@
                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png"> Закажи звонок</button>
                     </p>
                     <p class="email-top">
-                        <a href="mailto:dev@mobile5.kz">support@antspro.com</a>
+                        <a href="mailto:support@antspro.com">support@antspro.com</a>
                     </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <div class="wrapper-for-zagolovok">
+                        <div class="wrapper-for-zagolovok shadow">
                             <h1>Разработка мобильных приложений<br />Цены ниже рыночных на 19%</h1>
                             <h3>платформы iOS и Android</h3>    
                         </div>
@@ -57,7 +77,7 @@
     </div>
     <!-- /.intro-header -->
 
-    <div class="content-section-a services">
+    <div class="content-section-a" id="services">
 
         <div class="container">
 
@@ -176,7 +196,7 @@
         <!-- /.container -->
 
     </div>
-    <div class="content-section-b tech">
+    <div class="content-section-b tech" id="techs">
 
         <div class="container">
 
@@ -304,7 +324,7 @@
     
 
 
-      <div class="content-section-b portfolio">
+      <div class="content-section-b portfolio" id="works">
 
         <div class="container">
 
@@ -316,12 +336,17 @@
             <div class="row list-jobs">
                 <div class="col-lg-4">
                     <h2>Этванс CRM</h2>
-                    <div><img src="img/etvans.png" alt="Этванс CRM" class="without-border"></div>
+                    <div>
+                        <a href="img/etvans.png" class="gallery-etvans">
+                            <img src="img/etvans.png" alt="Этванс CRM" class="without-border">
+                        </a>
+                    </div>
                     <div class="desc">
                         CRM для агентств недвижимости.<br/>
                         Сайт: <a href="http://etvans.com">etvans.com</a>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <h2>Standard Insuranse</h2>
                     <div><img src="img/si.png" alt="Standard Insuranse"></div>
@@ -380,7 +405,7 @@
 
     
 
-     <div class="content-section-b customers">
+     <div class="content-section-b customers" id="clients">
 
         <div class="container">
 
@@ -434,7 +459,7 @@
                             <input type="email" name="email" class="form-control" placeholder="Введите email*" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name"phone" class="form-control" placeholder="Введите телефон*" required>
+                            <input type="text" name="phone" class="form-control" placeholder="Введите телефон*" required>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-danger btn-lg">Заказать расчет стоимости</button>
@@ -450,7 +475,7 @@
 
     </div>
 
-    <div class="content-section-b contacts">
+    <div class="content-section-b contacts" id="contacts">
 
         <div class="container">
 
@@ -462,9 +487,8 @@
                 </div>           
             </div>
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="city-title">Астана</div>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=51.168419,71.391388&amp;daddr=&amp;hl=ru&amp;geocode=&amp;sll=51.169267,71.390405&amp;sspn=0.008019,0.01929&amp;mra=mift&amp;mrsp=0&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=51.169267,71.390405&amp;spn=0.008019,0.01929&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=51.168419,71.391388&amp;daddr=&amp;hl=ru&amp;geocode=&amp;sll=51.169267,71.390405&amp;sspn=0.008019,0.01929&amp;mra=mift&amp;mrsp=0&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=51.169267,71.390405&amp;spn=0.008019,0.01929" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
+                <div class="col-lg-5" id="astana-map">
+                    <!-- content will be load from external file -->
                 </div>
                 <div class="col-lg-7 contacts-self-block">
                     моб.тел.: +7 707 377 10 71<br />
@@ -473,9 +497,8 @@
                 </div>
             </div>
              <div class="row moscow">
-                <div class="col-lg-5">
-                    <div class="city-title">Москва</div>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=55.690093,37.530063&amp;hl=ru&amp;geocode=&amp;sll=55.688399,37.531357&amp;sspn=0.014418,0.038581&amp;mra=mift&amp;mrsp=1&amp;sz=15&amp;ie=UTF8&amp;t=m&amp;ll=55.688399,37.531357&amp;spn=0.014418,0.038581&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=55.690093,37.530063&amp;hl=ru&amp;geocode=&amp;sll=55.688399,37.531357&amp;sspn=0.014418,0.038581&amp;mra=mift&amp;mrsp=1&amp;sz=15&amp;ie=UTF8&amp;t=m&amp;ll=55.688399,37.531357&amp;spn=0.014418,0.038581" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
+                <div class="col-lg-5" id="moscow-map">
+                    <!-- content will be load from external file -->
                 </div>
                 <div class="col-lg-7 contacts-self-block">
                     моб.тел.: +7 707 377 10 71<br />
@@ -540,6 +563,75 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="js/magnific-popup.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var navlink = $('ul.navbar-nav > li > a');
+            var collapsizer = $('#collapsizer');
+
+
+            navlink.click(function(e)
+            {
+                $('ul.navbar-nav > li').removeClass('active');
+                $(this).parent('li').addClass('active');
+            });
+
+            function mediaqueryresponse(mql)
+            {
+                if (mql.matches)
+                {
+                    $('.navbar').hide();
+                    $('#collapsizer').show();
+
+                    navlink.off('click');
+                    navlink.click(function(e)
+                    {
+                        $('ul.navbar-nav > li').removeClass('active');
+                        $(this).parent('li').addClass('active');
+
+                        $('#collapsizer').show();
+                        $('.navbar').hide();
+                    });
+
+                    collapsizer.click(function(){
+                        $('.navbar').show();
+                        $('#collapsizer').hide();
+                    });
+                }
+                else
+                {
+                    $('.navbar').show();
+                    $('#collapsizer').hide();
+                    navlink.off('click');
+                    navlink.click(function(e)
+                    {
+                        $('ul.navbar-nav > li').removeClass('active');
+                        $(this).parent('li').addClass('active');
+                    });
+                }
+            }
+            var mql = window.matchMedia("screen and (max-width: 768px)");
+            mediaqueryresponse(mql);
+            mql.addListener(mediaqueryresponse);
+
+            //load google-maps iframes into divs
+            $('#astana-map').load('astana_map.html');
+            $('#moscow-map').load('moscow_map.html');
+
+            //image popups
+            $('.gallery-etvans').magnificPopup(
+                    {
+                        type:'image',
+                        closeOnContentClick: true,
+                        showCloseBtn: false,
+                    }
+            );
+        });
+    </script>
 
 </body>
 
