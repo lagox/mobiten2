@@ -19,6 +19,10 @@
     <!-- Add custom CSS here -->
     <link href="css/landing-page.css" rel="stylesheet">
 
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
 </head>
 
 <body id="body">
@@ -332,12 +336,17 @@
             <div class="row list-jobs">
                 <div class="col-lg-4">
                     <h2>Этванс CRM</h2>
-                    <div><img src="img/etvans.png" alt="Этванс CRM" class="without-border"></div>
+                    <div>
+                        <a href="img/etvans.png" class="gallery-etvans">
+                            <img src="img/etvans.png" alt="Этванс CRM" class="without-border">
+                        </a>
+                    </div>
                     <div class="desc">
                         CRM для агентств недвижимости.<br/>
                         Сайт: <a href="http://etvans.com">etvans.com</a>
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <h2>Standard Insuranse</h2>
                     <div><img src="img/si.png" alt="Standard Insuranse"></div>
@@ -556,6 +565,9 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/smooth-scroll.js"></script>
 
+    <!-- Magnific Popup core JS file -->
+    <script src="js/magnific-popup.min.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function(){
             var navlink = $('ul.navbar-nav > li > a');
@@ -609,6 +621,9 @@
             //load google-maps iframes into divs
             $('#astana-map').load('astana_map.html');
             $('#moscow-map').load('moscow_map.html');
+
+            //image popups
+            $('.gallery-etvans').magnificPopup({type:'image'});
         });
     </script>
 
