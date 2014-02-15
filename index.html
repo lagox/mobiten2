@@ -623,7 +623,13 @@
             $('#moscow-map').load('moscow_map.html');
 
             //image popups
-            $('.gallery-etvans').magnificPopup({type:'image'});
+            $('.gallery-etvans').magnificPopup(
+                    {
+                        type:'image',
+                        closeOnContentClick: true,
+                        showCloseBtn: false,
+                    }
+            );
         });
     </script>
 
