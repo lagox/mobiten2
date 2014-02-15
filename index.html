@@ -487,8 +487,10 @@
                 </div>           
             </div>
             <div class="row">
-                <div class="col-lg-5" id="astana-map">
-                    <!-- content will be load from external file -->
+                <div class="col-lg-5">
+                    <div class="city-title">Астана</div>
+                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=51.168419,71.391388&amp;daddr=&amp;hl=ru&amp;geocode=&amp;sll=51.169267,71.390405&amp;sspn=0.008019,0.01929&amp;mra=mift&amp;mrsp=0&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=51.169267,71.390405&amp;spn=0.008019,0.01929&amp;output=embed"></iframe>
+                    <br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=51.168419,71.391388&amp;daddr=&amp;hl=ru&amp;geocode=&amp;sll=51.169267,71.390405&amp;sspn=0.008019,0.01929&amp;mra=mift&amp;mrsp=0&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=51.169267,71.390405&amp;spn=0.008019,0.01929" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
                 </div>
                 <div class="col-lg-7 contacts-self-block">
                     моб.тел.: +7 707 377 10 71<br />
@@ -497,8 +499,9 @@
                 </div>
             </div>
              <div class="row moscow">
-                <div class="col-lg-5" id="moscow-map">
-                    <!-- content will be load from external file -->
+                <div class="col-lg-5">
+                    <div class="city-title">Москва</div>
+                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=55.690093,37.530063&amp;hl=ru&amp;geocode=&amp;sll=55.688399,37.531357&amp;sspn=0.014418,0.038581&amp;mra=mift&amp;mrsp=1&amp;sz=15&amp;ie=UTF8&amp;t=m&amp;ll=55.688399,37.531357&amp;spn=0.014418,0.038581&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=55.690093,37.530063&amp;hl=ru&amp;geocode=&amp;sll=55.688399,37.531357&amp;sspn=0.014418,0.038581&amp;mra=mift&amp;mrsp=1&amp;sz=15&amp;ie=UTF8&amp;t=m&amp;ll=55.688399,37.531357&amp;spn=0.014418,0.038581" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
                 </div>
                 <div class="col-lg-7 contacts-self-block">
                     моб.тел.: +7 707 377 10 71<br />
@@ -617,10 +620,6 @@
             var mql = window.matchMedia("screen and (max-width: 768px)");
             mediaqueryresponse(mql);
             mql.addListener(mediaqueryresponse);
-
-            //load google-maps iframes into divs
-            $('#astana-map').load('astana_map.html');
-            $('#moscow-map').load('moscow_map.html');
 
             //image popups
             $('.gallery-etvans').magnificPopup(
