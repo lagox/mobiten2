@@ -55,6 +55,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#works">Портфолио</a></li>
                 <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#clients">Наши клиенты</a></li>
                 <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#contacts">Контакты</a></li>
+                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#prices">Цены</a></li>
             </ul>
         </div>
     </nav>
@@ -73,7 +74,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png"> Закажи звонок</button>
                     </p>
                     <p class="email-top">
-                        <a href="mailto:support@antspro.com">support@antspro.com</a>
+                        <a href="mailto:astana@antspro.com">astana@antspro.com</a>
                     </p>
                 </div>
             </div>
@@ -454,7 +455,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 
     </div>
 
-    <div class="content-section-b main-form">
+    <div class="content-section-b main-form" id="prices">
 
         <div class="container">
 
