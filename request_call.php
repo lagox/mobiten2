@@ -108,7 +108,18 @@
          . "Реферал: {$_COOKIE['referer']}\n";
          foreach ($_COOKIE as $key => $val) {
            if (0 === strpos($key, 'utm')) {
-            $message .= "$key: $val\n";    
+               if($key == "utm_source"){
+                  $message .= "Источник кампании: $val\n";       
+               }
+               elseif ($key == "utm_medium") {
+                 $message .= "Канал кампании: $val\n";       
+               }
+               elseif ($key == "utm_term") {
+                  $message .= "Ключевое слово: $val\n";       
+               }
+               elseif ($key == "utm_campaign") {
+                  $message .= "Название кампании: $val\n";       
+               }
            }
          }
          $send = mail ($to, $subject, $message, $headers);
@@ -125,7 +136,7 @@
            setcookie($key, null, -1, '/');
          }
          unset($_COOKIE['referer']);
-         setcookie(referer,  null, -1, '/');
+         setcookie('referer',  null, -1, '/');
       }
       else
       {
