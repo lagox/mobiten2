@@ -78,7 +78,7 @@
       echo "<div id=\"space\"><br></div>";
       echo "<div id=\"container\">";
       echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-      echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали имя!<br /><a href=index.html>Назад</a></span></div>";
+      echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали имя!<br /><a href=index.php>Назад</a></span></div>";
       exit;
    }
    else
@@ -87,35 +87,52 @@
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали номер телефона!<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали номер телефона!<br /><a href=index.php>Назад</a></span></div>";
          exit;
       }
       elseif(empty($email)){
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали email!<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали email!<br /><a href=index.php>Назад</a></span></div>";
          exit;
       }
-      else
+      else{
+
          $to = "y.kussainov@marlin.kz";
-      $headers = "Content-type: text/plain; charset = utf-8";
-      $subject = "Мобилити: заказ обратного звонка";
-      $message = "Имя пославшего: $name \nТелефон: $phone \nEmail: $email";
-      $send = mail ($to, $subject, $message, $headers);
+         $headers = "Content-type: text/plain; charset = utf-8";
+         $subject = "Мобилити: заказ обратного звонка";
+         $message = "Имя пославшего: $name \n"
+         . "Телефон: $phone \n"
+         . "Email: $email\n"
+         . "Реферал: {$_COOKIE['referer']}\n";
+         foreach ($_COOKIE as $key => $val) {
+           if (0 === strpos($key, 'utm')) {
+            $message .= "$key: $val\n";    
+           }
+         }
+         $send = mail ($to, $subject, $message, $headers);
+      }
       if ($send == 'true')
       {
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Спасибо за Вашу заявку!<br />Мы вам скоро перезвоним.<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Спасибо за Вашу заявку!<br />Мы вам скоро перезвоним.<br /><a href=index.php>Назад</a></span></div>";
+         // delete cookies
+         foreach ($_COOKIE as $key => $val) {
+           unset($_COOKIE[$key]);
+           setcookie($key, null, -1, '/');
+         }
+         unset($_COOKIE['referer']);
+         setcookie(referer,  null, -1, '/');
       }
       else
       {
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Ошибка. Сообщение не отправлено!<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Ошибка. Сообщение не отправлено!<br /><a href=index.php>Назад</a></span></div>";
       }
       ?>
    </body>
