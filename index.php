@@ -24,7 +24,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Разработка мобильных приложений</title>
+    <title>Ants Pro - разработка мобильных приложений и CRM</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -64,7 +64,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 shadow" id="logo">
-                    <a id="logotip-link" href="index.php">Ants Pro</a>
+                    <a id="logotip-link" href="index.php">
+                        <img src="img/logo.png" alt="Ants Pro" title="Ants Pro">
+                    </a>
                     <p class="descriptor-site">Мобильные решения</p>
                 </div>
                 <div class="col-lg-2 col-lg-offset-8" id="top-contacts">
