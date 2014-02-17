@@ -54,8 +54,8 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#techs">Технологии</a></li>
                 <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#works">Портфолио</a></li>
                 <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#clients">Наши клиенты</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#contacts">Контакты</a></li>
                 <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#prices">Цены</a></li>
+                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </nav>
@@ -83,6 +83,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <div class="intro-message">
                         <div class="wrapper-for-zagolovok shadow">
                             <h1>Разработка мобильных приложений и CRM<br />Цены ниже рыночных на 19%</h1>
+                            <h3>Standard Insurance заказывал мобильное приложение у нас</h3>    
                             <h3>платформы iOS и Android</h3>    
                         </div>
                     </div>
@@ -366,10 +367,10 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
 
                 <div class="col-lg-4">
-                    <h2>Standard Insuranse</h2>
-                    <div><img src="img/si.png" alt="Standard Insuranse"></div>
+                    <h2>Standard Insurance</h2>
+                    <div><img src="img/si.png" alt="Standard Insurance"></div>
                     <div class="desc">
-                        Приложение предназначено для клиентов страховой компании Standart Insuranse.<br/>
+                        Приложение предназначено для клиентов страховой компании Standard Insurance.<br/>
                         Сайт: <a href="https://play.google.com/store/apps/details?id=kz.myfirst">play.google.com</a>
                     </div>
                 </div>
@@ -439,7 +440,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <img src="img/gt.jpg" alt="ТОО «Gas Technology»" title="ТОО «Gas Technology»">
                 </div>
                 <div class="col-lg-3">
-                    <img src="img/si-logo.png" alt="Standard Insuranse" title="Standard Insuranse">
+                    <img src="img/si-logo.png" alt="Standard Insurance" title="Standard Insurance">
                 </div>
                 <div class="col-lg-3">
                     <img src="img/grm.jpg" alt="Гильдия риелторов Москвы" title="Гильдия риелторов Москвы">
