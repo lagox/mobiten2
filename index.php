@@ -597,7 +597,6 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
             var navlink = $('ul.navbar-nav > li > a');
             var collapsizer = $('#collapsizer');
 
-
             navlink.click(function(e)
             {
                 $('ul.navbar-nav > li').removeClass('active');
@@ -608,6 +607,16 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
             {
                 if (mql.matches)
                 {
+                    //---- hide menu by click outside
+                    $('html').click(function(){
+                        $('.navbar').hide();
+                        $('#collapsizer').show();
+                    });
+                    collapsizer.click(function(event){
+                        event.stopPropagation();
+                    });s
+                    //----
+
                     $('.navbar').hide();
                     $('#collapsizer').show();
 
@@ -628,6 +637,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 }
                 else
                 {
+                    //hide menu by click outside event remove
+                    $('html').off('click');
+
                     $('.navbar').show();
                     $('#collapsizer').hide();
                     navlink.off('click');
