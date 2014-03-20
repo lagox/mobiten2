@@ -589,7 +589,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     });
                     collapsizer.click(function(event){
                         event.stopPropagation();
-                    });s
+                    });
                     //----
 
                     $('.navbar').hide();
