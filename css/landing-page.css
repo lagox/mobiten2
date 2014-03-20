@@ -222,7 +222,7 @@ p.copyright {
 	background: rgba(255, 255, 255, 0.5);
 }
 #logo img{
-	width:90px;
+	width:120px;
 	margin-bottom: 5px;
 }
 #top-contacts{
@@ -488,9 +488,9 @@ text-align: center;
 	text-align: center;
 }
 .list-tech-item .tech-item{
-	float: left;
-	margin: 10px 34px;
-    height: 148px;
+	/*float: left;*/
+	/*margin: 10px 34px;*/
+    /*height: 148px;*/
 }
 .tech-item-title{
 	margin-top: 20px;

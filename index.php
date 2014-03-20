@@ -81,12 +81,11 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" style="padding-left: 0">
                     <div class="intro-message">
                         <div class="wrapper-for-zagolovok shadow">
                             <h1>Разработка мобильных приложений и CRM<br />Цены ниже рыночных на 19%</h1>
-                            <h3>Standard Insurance заказывал мобильное приложение у нас</h3>    
-                            <h3>платформы iOS и Android</h3>    
+                            <h3>Платформы iOS и Android</h3>
                         </div>
                     </div>
                 </div>
@@ -230,47 +229,29 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
             </div>
 
             <div class="row">
-                <div class="col-lg-12 list-tech-item">
-                    <div class="tech-item">
+                <div class="list-tech-item">
+                    <div class="col-lg-3 tech-item">
                         <img src="img/objective-c-logo.png" alt="Objective-C">
                         <div class="tech-item-title">
                             Objective-C
                         </div>
                     </div>
-                    <div class="tech-item">
+                    <div class="col-lg-3 tech-item">
                         <img src="img/java-logo.png" alt="Java">
                         <div class="tech-item-title">
                             Java
                         </div>
                     </div>
-                    <div class="tech-item">
+                    <div class="col-lg-3 tech-item">
                         <img src="img/ruby-logo.png" alt="Objective-C">
                         <div class="tech-item-title">
                             Ruby
                         </div>
                     </div>
-                    <div class="tech-item">
-                        <img src="img/backbone-logo.png" alt="Objective-C">
-                        <div class="tech-item-title">
-                            Backbone.js
-                        </div>
-                    </div>
-                    <div class="tech-item">
+                    <div class="col-lg-3 tech-item">
                         <img src="img/html5-logo.png" alt="Objective-C">
                         <div class="tech-item-title">
                             Html5
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="img/angularjs-logo.png" alt="Objective-C">
-                        <div class="tech-item-title">
-                            Angular
-                        </div>
-                    </div>
-                    <div class="tech-item">
-                        <img src="img/php-logo.jpg" alt="Objective-C">
-                        <div class="tech-item-title">
-                            PHP
                         </div>
                     </div>
                 </div>
@@ -438,13 +419,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>           
             </div>
             <div class="row">
-                <div class="col-lg-3">
-                    <img src="img/gt.jpg" alt="ТОО «Gas Technology»" title="ТОО «Gas Technology»">
-                </div>
-                <div class="col-lg-3">
-                    <img src="img/si-logo.png" alt="Standard Insurance" title="Standard Insurance">
-                </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-lg-offset-3">
                     <img src="img/grm.jpg" alt="Гильдия риелторов Москвы" title="Гильдия риелторов Москвы">
                 </div>
                 <div class="col-lg-3">
