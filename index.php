@@ -494,17 +494,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     skype: lagox.skype
                 </div>
             </div>
-             <div class="row moscow">
-                <div class="col-lg-5">
-                    <div class="city-title">Москва</div>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=55.690093,37.530063&amp;hl=ru&amp;geocode=&amp;sll=55.688399,37.531357&amp;sspn=0.014418,0.038581&amp;mra=mift&amp;mrsp=1&amp;sz=15&amp;ie=UTF8&amp;t=m&amp;ll=55.688399,37.531357&amp;spn=0.014418,0.038581&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=&amp;daddr=55.690093,37.530063&amp;hl=ru&amp;geocode=&amp;sll=55.688399,37.531357&amp;sspn=0.014418,0.038581&amp;mra=mift&amp;mrsp=1&amp;sz=15&amp;ie=UTF8&amp;t=m&amp;ll=55.688399,37.531357&amp;spn=0.014418,0.038581" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
-                </div>
-                <div class="col-lg-7 contacts-self-block">
-                    моб.тел.: +7 707 377 10 71<br />
-                    e-mail: <a href="mailto:moscow@antspro.com">moscow@antspro.com</a><br />
-                    skype: lagox.skype
-                </div>
-            </div>
+             
         </div>
         <!-- /.container -->
 
