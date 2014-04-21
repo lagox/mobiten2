@@ -32,30 +32,30 @@ body, h1, h2, h3, h4, h5, h6 {
 	padding-top: 30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 10px;
 	color: #000;
-	background: url(../img/apple-imac-office-hi-tech-hd-wallpaper.jpg) no-repeat center center;
+	background: url(../img/wrap-back.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 }
 
 .intro-message {
 	position: relative;
-	padding-top: 6%;
+	padding-top: 3%;
 	padding-bottom: 18%;
 }
 .wrapper-for-zagolovok{
 	color: #000;
 	padding: 20px 10px;
 	/*border:7px solid #fff;*/
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    margin-bottom: 0px;
-    background: rgba(255, 255, 255, 0.5);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  background: rgba(255, 255, 255, 0.3);
 }
 .intro-message > .wrapper-for-zagolovok > h1 {
 	margin: 0px 0px 25px 0px;
 	font-weight: 500;
-	font-size: 3.5em;
+	font-size: 3em;
 	line-height: 50px;
 	color:#000;
 	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
@@ -204,7 +204,7 @@ p.copyright {
 /*}*/
 .descriptor-site{
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 16px;
 	color:#000;
 }
 #logotip-link{
@@ -215,25 +215,25 @@ p.copyright {
 #logo{
 	color: #000;
 	padding: 5px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	/*-moz-border-radius: 10px;*/
+	/*-webkit-border-radius: 10px;*/
 	border-radius: 10px;
 	margin-bottom: 20px;
-	background: rgba(255, 255, 255, 0.5);
+	/*background: rgba(255, 255, 255, 0.5);*/
 }
 #logo img{
 	width:120px;
 	margin-bottom: 5px;
 }
 #top-contacts{
-	color: #fff;	
+	color: #000;	
 }
 #top-contacts > .phone-number{
 	font-size:22px;
 }
 #top-contacts > .email-top > a{
-	font-weight: normal;
-	color:#fff;
+	font-weight: 500;
+	color: #000;	
 }
 .phone-number-descript{
 	font-weight:normal;
@@ -265,16 +265,23 @@ color:#000;
 .services-list{
 	text-align: center;
 	margin-top: 40px;
-	/*outline: 1px solid #ccc;*/
 }
 .services-list .col-lg-4{
 	margin-bottom: 20px;
+	height:150px;
+	padding: 15px;
 }
-.services h2{
-	font-weight: normal;
-	font-size: 1.2em !important;
-	line-height: 26px;
-	/*display: inline-block;*/
+.box-service{
+	border: 3px solid #5c5c5c;
+	padding: 15px;
+	height:140px;
+}
+.box-service:hover{
+	opacity: 0.8;
+}
+.box-service h2{
+	font-size: 1.2em;
+	font-weight: bold;
 }
 .design-free{
 	/*background: url(../img/test3.jpg) no-repeat center center;*/
@@ -296,6 +303,26 @@ color:#000;
 	/*background-color: rgba(0,0,0,0.7);*/
 }
 .design-free-button{
+	text-align: center;
+}
+.presentation{
+	text-align: center;	
+	/*height:400px;*/
+	margin-top:10px;
+	padding-top: 20px;
+}
+.presentation-title{
+	text-align: center;
+	font-weight: 500;
+	font-size: 2.5em;
+	line-height: 45px;
+	color:#000;
+	margin-bottom:20px;
+	/*padding: 20px 10px;*/
+	/*border:#fff 4px solid;*/
+	/*background-color: rgba(0,0,0,0.7);*/
+}
+.presentation-button{
 	text-align: center;
 }
 #request-free-design{
