@@ -1,4 +1,3 @@
-<!-- 
 <?php
 // если мы не знаем реферала
 if (!isset($_COOKIE['referer'])) {
@@ -15,7 +14,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
         }
     }
 }
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
