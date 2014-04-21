@@ -43,25 +43,25 @@ body, h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 18%;
 }
 .wrapper-for-zagolovok{
-	color: #000;
+	color: #fff;
 	padding: 20px 10px;
-	/*border:7px solid #fff;*/
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+	border:6px solid #fff;
+  /*-moz-border-radius: 10px;*/
+  /*-webkit-border-radius: 10px;*/
+  /*border-radius: 10px;*/
   margin-bottom: 0px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.4);
 }
 .intro-message > .wrapper-for-zagolovok > h1 {
 	margin: 0px 0px 25px 0px;
 	font-weight: 500;
 	font-size: 3em;
 	line-height: 50px;
-	color:#000;
+	color:#fff;
 	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
 }
 
-.intro-divider {
+.intro-divider{
 	width: 400px;
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -71,7 +71,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-size: 22px;
 	line-height: 26px;
 	font-weight: 500;
-	color:#000;
+	color:#fff;
 	margin-top: 10px;
 	margin-bottom: 5px;
 	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
@@ -267,14 +267,17 @@ color:#000;
 	margin-top: 40px;
 }
 .services-list .col-lg-4{
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	height:150px;
 	padding: 15px;
 }
 .box-service{
-	border: 3px solid #5c5c5c;
+	border: 2px solid #a4a4a4;
 	padding: 15px;
 	height:140px;
+	-moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 .box-service:hover{
 	opacity: 0.8;
