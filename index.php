@@ -34,75 +34,77 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 
     <!-- Custom Google Web Font -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-
     <!-- Add custom CSS here -->
     <link href="css/landing-page.css" rel="stylesheet">
 
+    
 
-    <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
-        
-        <script type="text/javascript">
-            // When the window has finished loading create our google map below
-            google.maps.event.addDomListener(window, 'load', init);
-        
-            function init() {
-                // Basic options for a simple Google Map
-                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                var myLatlng = new google.maps.LatLng(51.172581, 71.388656)
-
-                var mapOptions = {
-                    // How zoomed in you want the map to start at (always required)
-                    zoom: 14,
-
-                    // The latitude and longitude to center the map (always required)
-                    center: myLatlng, // New York
-
-                    // How you would like to style the map. 
-                    // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}]
-                };
-
-                // Get the HTML DOM element that will contain your map 
-                // We are using a div with id="map" seen below in the <body>
-                var mapElement = document.getElementById('map');
-
-                // Create the Google Map using out element and options defined above
-                var map = new google.maps.Map(mapElement, mapOptions);
-                map.setOptions({scrollwheel: false, disableDoubleClickZoom: true});
-
-                var marker = new google.maps.Marker({
-                  position: myLatlng,
-                  map: map,
-                  title: 'ул.187, 16/3, 1'
-                });
-
-            }
-        </script>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    
 
 </head>
 
 <body id="body">
-    <button class="btn btn-info" id="collapsizer">
-        <span class="glyphicon glyphicon-th"></span> Меню
-    </button>
-    <nav class="navbar navbar-fixed-top navbar-inverse shadow scroll-header" role="navigation">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li class="active"><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#body">Главная</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#services">Услуги</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#techs">Технологии</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#works">Наши работы</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#clients">Наши клиенты</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#prices">Цены</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#present">Презентация</a></li>
-                <li><a data-scroll data-speed="500" data-easing="easeInOutCubic" data-url="false" href="#contacts">Контакты</a></li>
-            </ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+                <a data-scroll href="#body">Главная</a>
+            </li>
+            <li>
+                <a data-scroll href="#services">Услуги</a>
+            </li>
+            <li>
+                <a data-scroll href="#techs">Технологии</a>
+            </li>
+            <li>
+                <a data-scroll href="#works">Наши работы</a>
+            </li>
+            <li>
+                <a data-scroll href="#clients">Клиенты</a>
+            </li>
+            <li>
+                <a data-scroll href="#prices">Цены</a>
+            </li>
+            <li>
+                <a data-scroll href="#present">Презентация</a>
+            </li>
+            <li>
+                <a data-scroll href="#contacts">Контакты</a>
+            </li>
+            
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+            <p class="navbar-text phone-number">+7 707 377 10 71</p>
+            </li>
+            <li>
+                <p class="navbar-text">
+                <button type="button" class="btn btn-warning btn-yellow btn-xs" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png" alt=""> Закажи звонок</button>    
+                </p>
+                
+            </li>
+            
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-    
     <div class="intro-header">
         <div class="cleanup">
             <div class="container">
@@ -126,11 +128,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
                 <div class="row request-call-padding-bottom">
                     <div class="text-center">
-                        <p class="request-call-block">
-                            <button type="button" class="btn btn-warning btn-lg btn-yellow" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png"> Закажи звонок</button>
-                            <p class="email-top">
-                        </p>
-                        </p>    
+                        <a data-scroll href="#contacts" id="btn-request-project">Связаться с нами</a>    
                     </div>
                 </div>
 
@@ -204,7 +202,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <h1 class="design-free-title">Дизайн приложения мы дарим бесплатно</h1>
                 </div>
                 <div class="col-lg-12 design-free-button">
-                    <button type="button" class="btn btn-warning btn-lg btn-yellow" id="request-free-design" data-toggle="modal" data-target="#requestCallModal" ><img src="img/arr.png"> Заказать</button><br />
+                    <button type="button" class="btn btn-warning btn-lg btn-yellow" id="request-free-design" data-toggle="modal" data-target="#requestCallModal" >Заказать <img src="img/arr.png"></button><br />
                 </div>
 
             </div>
@@ -475,11 +473,17 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>           
             </div>
             <div class="row">
-                <div class="col-lg-3 col-lg-offset-3">
+                <div class="col-lg-3">
                     <img src="img/grm.jpg" alt="Гильдия риелторов Москвы" title="Гильдия риелторов Москвы">
                 </div>
                 <div class="col-lg-3">
                     <img src="img/sozdik-logo.png" alt="Sozdik.kz" title="Sozdik.kz">
+                </div>
+                <div class="col-lg-3">
+                    <img src="img/kt.jpg" alt="Казахтелеком" title="Казахтелеком">
+                </div>
+                <div class="col-lg-3">
+                    <img src="img/si-logo.png" alt="Standard Insurance" title="Standard Insurance">
                 </div>
             </div>
             
@@ -538,7 +542,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <iframe src="http://www.slideshare.net/slideshow/embed_code/33795408" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
                 </div>
                 <div class="col-lg-12 presentation-button">
-                    <a type="button" href="antspro_projects.pdf" class="btn btn-warning btn-lg btn-yellow"><img src="img/pdf-icon.png"> Скачать презентацию в PDF</a><br />
+                    <a type="button" href="antspro_projects.pdf" class="btn btn-success btn-lg"><img src="img/pdf-icon.png"> Скачать презентацию в PDF</a><br />
                 </div>
 
             </div>
@@ -547,7 +551,6 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
         <!-- /.container -->
 
     </div>
-
 
     <div class="content-section-b contacts" id="contacts">
 
@@ -575,7 +578,11 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
         <!-- /.container -->
 
     </div>
-
+    
+    <!-- Google Maps Api -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <!-- Google Maps settings -->
+    <script src="js/googlemaps_settings.js"></script>
     <div id="map"></div>
 
     <footer class="foot">
@@ -628,97 +635,36 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/smooth-scroll.js"></script>
 
-    <!-- Magnific Popup core JS file -->
-    <script src="js/magnific-popup.min.js"></script>
+    
 
+    
+
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23987518 = new Ya.Metrika({id:23987518, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23987518" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42109211-3', 'antspro.com');
+      ga('send', 'pageview');
+
+    </script>
+
+    <!-- smooth scroll -->
     <script type="text/javascript">
-        $(document).ready(function(){
-            var navlink = $('ul.navbar-nav > li > a');
-            var collapsizer = $('#collapsizer');
-
-            navlink.click(function(e)
-            {
-                $('ul.navbar-nav > li').removeClass('active');
-                $(this).parent('li').addClass('active');
-            });
-
-            function mediaqueryresponse(mql)
-            {
-                if (mql.matches)
-                {
-                    //---- hide menu by click outside
-                    $('html').click(function(){
-                        $('.navbar').hide();
-                        $('#collapsizer').show();
-                    });
-                    collapsizer.click(function(event){
-                        event.stopPropagation();
-                    });
-                    //----
-
-                    $('.navbar').hide();
-                    $('#collapsizer').show();
-
-                    navlink.off('click');
-                    navlink.click(function(e)
-                    {
-                        $('ul.navbar-nav > li').removeClass('active');
-                        $(this).parent('li').addClass('active');
-
-                        $('#collapsizer').show();
-                        $('.navbar').hide();
-                    });
-
-                    collapsizer.click(function(){
-                        $('.navbar').show();
-                        $('#collapsizer').hide();
-                    });
-                }
-                else
-                {
-                    //hide menu by click outside event remove
-                    $('html').off('click');
-
-                    $('.navbar').show();
-                    $('#collapsizer').hide();
-                    navlink.off('click');
-                    navlink.click(function(e)
-                    {
-                        $('ul.navbar-nav > li').removeClass('active');
-                        $(this).parent('li').addClass('active');
-                    });
-                }
-            }
-            var mql = window.matchMedia("screen and (max-width: 768px)");
-            mediaqueryresponse(mql);
-            mql.addListener(mediaqueryresponse);
-
-            //image popups
-            $('.gallery-etvans').magnificPopup(
-                    {
-                        type:'image',
-                        closeOnContentClick: true,
-                        showCloseBtn: false,
-                    }
-            );
+        smoothScroll.init({
+            speed: 500, // Integer. How fast to complete the scroll in milliseconds
+            easing: 'easeInOutCubic', // Easing pattern to use
+            updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+            // offset: 10, // Integer. How far to offset the scrolling anchor location in pixels
+            // callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+            // callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
         });
     </script>
-<!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23987518 = new Ya.Metrika({id:23987518, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23987518" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42109211-3', 'antspro.com');
-  ga('send', 'pageview');
-
-</script>
 </body>
 
 </html>
