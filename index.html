@@ -1,3 +1,4 @@
+<!-- 
 <?php
 // если мы не знаем реферала
 if (!isset($_COOKIE['referer'])) {
@@ -15,6 +16,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     }
 }
 ?>
+ -->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -25,7 +27,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <title>ANTSPRO - профессиональная разработка мобильных приложений и IT-аутсорсинг. Платформы iOS и Android</title>
+    <title>ANTSPRO - профессиональная разработка мобильных приложений и IT-аутсорсинг. Платформы iOS и Android. Разработка программного обеспечения</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -40,6 +42,45 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="css/magnific-popup.css">
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var myLatlng = new google.maps.LatLng(51.172581, 71.388656)
+
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 14,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: myLatlng, // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using out element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+                map.setOptions({scrollwheel: false, disableDoubleClickZoom: true});
+
+                var marker = new google.maps.Marker({
+                  position: myLatlng,
+                  map: map,
+                  title: 'ул.187, 16/3, 1'
+                });
+
+            }
+        </script>
 
 </head>
 
@@ -61,41 +102,41 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
             </ul>
         </div>
     </nav>
-
+    
     <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2" id="logo">
-                    <a id="logotip-link" href="index.php">
-                        <img src="img/logo.png" alt="Ants Pro" title="Ants Pro">
-                    </a>
-                    <p class="descriptor-site">Мобильные решения</p>
+        <div class="cleanup">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center" id="logo">
+                        <a id="logotip-link" href="index.php">
+                            <img src="img/logosmall.png" alt="Ants Pro" title="Ants Pro – мобильные решения">
+                        </a>
+                    </div>
+                    
                 </div>
-                <div class="col-lg-2 col-lg-offset-8" id="top-contacts">
-                    <p class="phone-number-descript">Есть вопросы? Звони!</p>
-                    <p class="phone-number">+7 707 377 10 71</p>
-                    <p class="request-call-block">
-                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png"> Закажи звонок</button>
-                    </p>
-                    <p class="email-top">
-                        <a href="mailto:astana@antspro.com">astana@antspro.com</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12" style="padding-left: 0">
-                    <div class="intro-message">
-                        <div class="wrapper-for-zagolovok">
-                            <h1>Профессиональная разработка мобильных приложений и IT-аутсорсинг<br /></h1>
-                            <h3>Платформы iOS и Android</h3>
+                <div class="row">
+                    <div class="col-lg-12" style="padding-left: 0">
+                        <div class="intro-message">
+                            <div class="wrapper-for-zagolovok">
+                                <h1>Профессиональная разработка мобильных приложений и IT-аутсорсинг<br /></h1>
+                                <h3>Платформы iOS и Android</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="row request-call-padding-bottom">
+                    <div class="text-center">
+                        <p class="request-call-block">
+                            <button type="button" class="btn btn-warning btn-lg btn-yellow" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png"> Закажи звонок</button>
+                            <p class="email-top">
+                        </p>
+                        </p>    
+                    </div>
+                </div>
+
             </div>
-
-        </div>
         <!-- /.container -->
-
+        </div>
     </div>
     <!-- /.intro-header -->
 
@@ -163,7 +204,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <h1 class="design-free-title">Дизайн приложения мы дарим бесплатно</h1>
                 </div>
                 <div class="col-lg-12 design-free-button">
-                    <button type="button" class="btn btn-success btn-lg" id="request-free-design" data-toggle="modal" data-target="#requestCallModal" ><img src="img/arr.png"> Заказать</button><br />
+                    <button type="button" class="btn btn-warning btn-lg btn-yellow" id="request-free-design" data-toggle="modal" data-target="#requestCallModal" ><img src="img/arr.png"> Заказать</button><br />
                 </div>
 
             </div>
@@ -327,7 +368,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                             <input type="text" name="phone" class="form-control" placeholder="Введите телефон*" required>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-lg">Заказать расчет стоимости</button>
+                            <button type="submit" class="btn btn-warning btn-lg btn-yellow">Заказать расчет стоимости</button>
                         </div>
                     </form>
                 </div>
@@ -473,7 +514,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                             <input type="text" name="phone" class="form-control" placeholder="Введите телефон*" required>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-lg">Заказать расчет стоимости</button>
+                            <button type="submit" class="btn btn-warning btn-lg btn-yellow">Заказать расчет стоимости</button>
                         </div>
                     </form>
                 </div>
@@ -497,7 +538,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <iframe src="http://www.slideshare.net/slideshow/embed_code/33795408" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
                 </div>
                 <div class="col-lg-12 presentation-button">
-                    <a type="button" href="antspro_projects.pdf" class="btn btn-success btn-lg"><img src="img/pdf-icon.png"> Скачать презентацию в PDF</a><br />
+                    <a type="button" href="antspro_projects.pdf" class="btn btn-warning btn-lg btn-yellow"><img src="img/pdf-icon.png"> Скачать презентацию в PDF</a><br />
                 </div>
 
             </div>
@@ -519,13 +560,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     </h1>
                 </div>           
             </div>
+         
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="city-title">Астана</div>
-                    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=51.168419,71.391388&amp;daddr=&amp;hl=ru&amp;geocode=&amp;sll=51.169267,71.390405&amp;sspn=0.008019,0.01929&amp;mra=mift&amp;mrsp=0&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=51.169267,71.390405&amp;spn=0.008019,0.01929&amp;output=embed"></iframe>
-                    <br /><small><a href="https://maps.google.com/maps?f=d&amp;source=embed&amp;saddr=51.168419,71.391388&amp;daddr=&amp;hl=ru&amp;geocode=&amp;sll=51.169267,71.390405&amp;sspn=0.008019,0.01929&amp;mra=mift&amp;mrsp=0&amp;sz=16&amp;ie=UTF8&amp;t=m&amp;ll=51.169267,71.390405&amp;spn=0.008019,0.01929" style="color:#0000FF;text-align:left">Просмотреть увеличенную карту</a></small>
-                </div>
-                <div class="col-lg-7 contacts-self-block">
+                <div class="contacts-self-block">
                     Адрес: Республика Казахстан, город Астана, ул.187, 16/3, 1
                     <br />
                     моб.тел.: +7 707 377 10 71<br />
@@ -539,13 +576,15 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 
     </div>
 
+    <div id="map"></div>
+
     <footer class="foot">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="foot-phone">+7 707 377 10 71</div>
                     <div class="foot-email"><a href="mailto:astana@antspro.com">astana@antspro.com</a></div>
-                    <button type="button" class="btn btn-warning btn-lg" id="request-call-button-2" data-toggle="modal" data-target="#requestCallModal" ><img src="img/tube.png"> Закажи звонок</button>
+                    <button type="button" class="btn btn-warning btn-lg btn-yellow" id="request-call-button-2" data-toggle="modal" data-target="#requestCallModal" ><img src="img/tube.png"> Закажи звонок</button>
                     <div class="copy">
                         ANTSPRO – мобильные решения &copy; 2012-2014
                     </div>
@@ -577,7 +616,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                             <input type="text" name="phone" class="form-control" placeholder="Введите телефон*" required>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-warning warning-black">Заказать</button>
+                            <button type="submit" class="btn btn-warning warning-black btn-yellow">Заказать</button>
                         </div>
                     </form>
                     <div class="confide-modal">
