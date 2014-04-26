@@ -46,7 +46,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 
 </head>
 
-<body id="body">
+<body id="body" data-spy="scroll" data-target=".navbar">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
