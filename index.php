@@ -1,4 +1,3 @@
-<!-- 
 <?php
 // если мы не знаем реферала
 if (!isset($_COOKIE['referer'])) {
@@ -16,7 +15,6 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     }
 }
 ?>
- -->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -41,8 +39,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/custom.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    
     
 
 </head>

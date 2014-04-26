@@ -785,6 +785,9 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	font-weight: normal;
 	color:#e6e6e6 !important;
 }
+.navbar .active a{
+	background: #383838 !important;
+}
 
 #btn-request-project{
 	padding: 10px 5px;
