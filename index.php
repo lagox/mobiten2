@@ -1,20 +1,3 @@
-<?php
-// если мы не знаем реферала
-if (!isset($_COOKIE['referer'])) {
-     // то запоминаем его
-     setcookie('referer', $_SERVER['HTTP_REFERER'], mktime(0, 0, 0, 1, 1, 2020));
-}
-?>
-<?php
-// запоминаем utm-метки
-if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
-    foreach ($_GET as $key => $val) {
-        if (0 === strpos($key, 'utm')) {
-            setcookie($key, $val, mktime(0, 0, 0, 1, 1, 2020));
-        }
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
