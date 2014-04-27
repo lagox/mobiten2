@@ -99,7 +99,7 @@
       }
       else{
 
-         $to = "astana@antspro.com";
+         $to = "y.kussainov@marlin.kz";
          $headers = "Content-type: text/plain; charset = utf-8";
          $subject = "Мобилити: расчет стоимости";
          $message = "Имя пославшего: $name \n"
