@@ -51,6 +51,17 @@
    </style>
 </head>
 <body>
+   <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23987518 = new Ya.Metrika({id:23987518, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23987518" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42109211-3', 'antspro.com');
+  ga('send', 'pageview');
+
+</script>
    <?php
    if (isset($_POST['name'])) {
       $name = $_POST['name'];
@@ -60,9 +71,6 @@
    }
    if (isset($_POST['email'])) {
       $email = $_POST['email'];
-   }
-   if (isset($_POST['comment'])) {
-      $comment = $_POST['comment'];
    }
    
    if (empty($name))
@@ -89,18 +97,46 @@
          echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали email!<br /><a href=index.php>Назад</a></span></div>";
          exit;
       }
-      else
-      $to = "astana@antspro.com"; 
-      $headers = "Content-type: text/plain; charset = utf-8";
-      $subject = "Мобилити: рассчитать стоимость";
-      $message = "Имя пославшего: $name \nТелефон: $phone \nEmail: $email \nКомментарий: $comment";
-      $send = mail ($to, $subject, $message, $headers);
+      else{
+
+         $to = "y.kussainov@marlin.kz";
+         $headers = "Content-type: text/plain; charset = utf-8";
+         $subject = "Мобилити: расчет стоимости";
+         $message = "Имя пославшего: $name \n"
+         . "Телефон: $phone \n"
+         . "Email: $email\n"
+         . "Реферал: {$_COOKIE['referer']}\n";
+         foreach ($_COOKIE as $key => $val) {
+           if (0 === strpos($key, 'utm')) {
+               if($key == "utm_source"){
+                  $message .= "Источник кампании: $val\n";       
+               }
+               elseif ($key == "utm_medium") {
+                 $message .= "Канал кампании: $val\n";       
+               }
+               elseif ($key == "utm_term") {
+                  $message .= "Ключевое слово: $val\n";       
+               }
+               elseif ($key == "utm_campaign") {
+                  $message .= "Название кампании: $val\n";       
+               }
+           }
+         }
+         $send = mail ($to, $subject, $message, $headers);
+      }
       if ($send == 'true')
       {
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
          echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Спасибо за Вашу заявку!<br />Мы вам скоро перезвоним.<br /><a href=index.php>Назад</a></span></div>";
+         // delete cookies
+         foreach ($_COOKIE as $key => $val) {
+           unset($_COOKIE[$key]);
+           setcookie($key, null, -1, '/');
+         }
+         unset($_COOKIE['referer']);
+         setcookie('referer',  null, -1, '/');
       }
       else
       {
@@ -110,17 +146,5 @@
          echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Ошибка. Сообщение не отправлено!<br /><a href=index.php>Назад</a></span></div>";
       }
       ?>
-
-       <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23987518 = new Ya.Metrika({id:23987518, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23987518" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
-      <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42109211-3', 'antspro.com');
-  ga('send', 'pageview');
-
-</script>
    </body>
    </html>
