@@ -67,7 +67,7 @@
       echo "<div id=\"space\"><br></div>";
       echo "<div id=\"container\">";
       echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-      echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали имя!<br /><a href=index.html>Назад</a></span></div>";
+      echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали имя!<br /><a href=index.php>Назад</a></span></div>";
       exit;
    }
    else
@@ -76,14 +76,14 @@
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали номер телефона!<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали номер телефона!<br /><a href=index.php>Назад</a></span></div>";
          exit;
       }
       elseif(empty($email)){
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали email!<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Вы не указали email!<br /><a href=index.php>Назад</a></span></div>";
          exit;
       }
       else
@@ -97,14 +97,14 @@
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Спасибо за Вашу заявку!<br />Мы вам скоро перезвоним.<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Спасибо за Вашу заявку!<br />Мы вам скоро перезвоним.<br /><a href=index.php>Назад</a></span></div>";
       }
       else
       {
          echo "<div id=\"space\"><br></div>";
          echo "<div id=\"container\">";
          echo "<div id=\"wb_Text1\" style=\"position:absolute;left:240px;top:93px;width:518px;height:108px;text-align:center;z-index:0;\">";
-         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Ошибка. Сообщение не отправлено!<br /><a href=index.html>Назад</a></span></div>";
+         echo "<span style=\"color:#000000;font-family:'Trebuchet MS';font-size:43px;\">Ошибка. Сообщение не отправлено!<br /><a href=index.php>Назад</a></span></div>";
       }
       ?>
       <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23987518 = new Ya.Metrika({id:23987518, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23987518" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
