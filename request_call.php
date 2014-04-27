@@ -103,9 +103,9 @@
          $headers = "Content-type: text/plain; charset = utf-8";
          $subject = "Мобилити: заказ обратного звонка";
          $message = "Имя пославшего: $name \n"
-         . "Телефон: $phone \n"
-         . "Email: $email\n"
-         . "Реферал: {$_COOKIE['referer']}\n";
+         ."Телефон: $phone \n"
+         ."Email: $email\n"
+         ."Реферал: {$_COOKIE['referer']}\n";
          foreach ($_COOKIE as $key => $val) {
            if (0 === strpos($key, 'utm')) {
                if($key == "utm_source"){
