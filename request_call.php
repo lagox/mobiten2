@@ -99,7 +99,7 @@
       }
       else{
 
-         $to = "y.kussainov@marlin.kz";
+         $to = "astana@antspro.com";
          $headers = "Content-type: text/plain; charset = utf-8";
          $subject = "Мобилити: заказ обратного звонка";
          $message = "Имя пославшего: $name \n"

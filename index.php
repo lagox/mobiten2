@@ -17,7 +17,6 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 ?>
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +24,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <title>ANTSPRO - профессиональная разработка мобильных приложений и IT-аутсорсинг. Платформы iOS и Android. Разработка программного обеспечения</title>
+    <title>ANTSPRO - профессиональная разработка мобильных приложений. Платформы iOS и Android. Заказная разработка ПО, аутсорсинг ИТ услуг и ИТ консалтинг</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -35,14 +34,14 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     <!-- Add custom CSS here -->
     <link href="css/landing-page.css" rel="stylesheet">
 
-    
+
 
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/custom.js"></script>
-    
-    
+
+
 
 </head>
 
@@ -86,20 +85,20 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
             <li>
                 <a data-scroll href="#contacts">Контакты</a>
             </li>
-            
+
           </ul>
-          
+
           <ul class="nav navbar-nav navbar-right">
             <li>
             <p class="navbar-text phone-number">+7 707 377 10 71</p>
             </li>
             <li>
                 <p class="navbar-text">
-                <button type="button" class="btn btn-warning btn-yellow btn-xs" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png" alt=""> Закажи звонок</button>    
+                <button type="button" class="btn btn-warning btn-yellow btn-xs" data-toggle="modal" data-target="#requestCallModal" id="request-call-button"><img src="img/tube.png" alt=""> Закажи звонок</button>
                 </p>
-                
+
             </li>
-            
+
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -113,7 +112,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                             <img src="img/logosmall.png" alt="Ants Pro" title="Ants Pro – мобильные решения">
                         </a>
                     </div>
-                    
+
                 </div>
                 <div class="row">
                     <div class="col-lg-12" style="padding-left: 0">
@@ -127,7 +126,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
                 <div class="row request-call-padding-bottom">
                     <div class="text-center">
-                        <a data-scroll href="#contacts" id="btn-request-project">Связаться с нами</a>    
+                        <a data-scroll href="#contacts" id="btn-request-project">Связаться с нами</a>
                     </div>
                 </div>
 
@@ -150,9 +149,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 <div class="col-lg-4">
                     <div class="box-service shadow">
                         <img src="img/iphoneipadicon.png" alt="Разработка под iPhone и iPad">
-                        <h2>Разработка под iPhone и iPad</h2>    
+                        <h2>Разработка под iPhone и iPad</h2>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-4">
                     <div class="box-service shadow">
@@ -175,8 +174,8 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 <div class="col-lg-4">
                     <div class="box-service shadow">
                         <img src="img/gaapicon.png" alt="Размещение приложений в App Store и Google Play">
-                        <h2>Размещение в App Store и Google Play</h2>  
-                    </div> 
+                        <h2>Размещение в App Store и Google Play</h2>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="box-service shadow">
@@ -185,7 +184,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
 
             </div>
-          
+
         </div>
         <!-- /.container -->
 
@@ -205,13 +204,13 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
 
             </div>
-            
+
         </div>
         <!-- /.container -->
 
     </div>
     <!-- /.content-section-b -->
-    
+
     <div class="content-section-b app-store">
 
         <div class="container">
@@ -224,7 +223,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- /.container -->
 
@@ -243,7 +242,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- /.container -->
 
@@ -254,7 +253,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
         <div class="container">
 
             <div class="row">
-                
+
                 <div class="col-lg-12">
                     <h1 class="one-c-title">Взаимодействие с 1C и другими учетными системами</h1>
                     <p class="one-c-desc">Мы можем разработать мобильное приложение для владельца бизнеса, которое будет интегрировано с 1C или другой учетной системой. Плюсы такой связки: мобильность бизнеса, все цифры на одном экране, красивые диаграммы и графики, удаленное управление</p>
@@ -262,9 +261,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                         <img src="img/1с.jpg" alt="Взаимодействие с 1C и другими учетными системами">
                 </div>
                 </div>
-                
+
             </div>
-            
+
         </div>
         <!-- /.container -->
 
@@ -278,7 +277,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <h1 class="tech-title">
                         Технологии, которые мы используем
                     </h1>
-                </div>           
+                </div>
             </div>
 
             <div class="row">
@@ -309,7 +308,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- /.container -->
 
@@ -321,7 +320,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
         <div class="container">
 
             <div class="row">
-                
+
                 <div class="col-lg-12">
                     <h1 class="support-title">2 месяца гарантийной поддержки - бесплатно</h1>
                     <p class="support-desc">После запуска приложения в производственную эксплуатацию мы даем гарантию на поддержку в 2 месяца. Все это бесплатно.</p>
@@ -330,12 +329,12 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- /.container -->
 
     </div>
-    
+
 
 
       <div class="content-section-b vigoda">
@@ -348,7 +347,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                         Работать с нами выгодно - 30% предоплата<br />
                         остальное по результату
                     </h1>
-                </div>           
+                </div>
             </div>
 
             <div class="row">
@@ -371,12 +370,12 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
                 <div class="col-lg-4">&nbsp;</div>
             </div>
-            
+
         </div>
         <!-- /.container -->
 
     </div>
-    
+
 
 
       <div class="content-section-b portfolio" id="works">
@@ -458,7 +457,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
 
     </div>
 
-    
+
 
      <div class="content-section-b customers" id="clients">
 
@@ -469,7 +468,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <h1 class="customers-title">
                         Наши клиенты
                     </h1>
-                </div>           
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-3">
@@ -485,8 +484,8 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <img src="img/si-logo.png" alt="Standard Insurance" title="Standard Insurance">
                 </div>
             </div>
-            
-            
+
+
         </div>
         <!-- /.container -->
 
@@ -501,7 +500,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <h1 class="main-form-title">
                         Расчет стоимости проекта
                     </h1>
-                </div>           
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-3"></div>
@@ -523,14 +522,14 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
                 <div class="col-lg-3"></div>
             </div>
-            
-            
+
+
         </div>
         <!-- /.container -->
 
     </div>
 
-    
+
      <div class="content-section-a presentation" id="present">
 
         <div class="container">
@@ -545,7 +544,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 </div>
 
             </div>
-            
+
         </div>
         <!-- /.container -->
 
@@ -560,9 +559,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <h1 class="contacts-title">
                         Контакты
                     </h1>
-                </div>           
+                </div>
             </div>
-         
+
             <div class="row">
                 <div class="contacts-self-block">
                     Адрес: Республика Казахстан, город Астана, ул.187, 16/3, 1
@@ -572,12 +571,12 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     skype: lagox.skype
                 </div>
             </div>
-             
+
         </div>
         <!-- /.container -->
 
     </div>
-    
+
     <!-- Google Maps Api -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <!-- Google Maps settings -->
@@ -635,11 +634,11 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     </div><!-- /.modal -->
 
 
-    
 
-    
 
-    
+
+
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter23987518 = new Ya.Metrika({id:23987518, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/23987518" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
     <script>
