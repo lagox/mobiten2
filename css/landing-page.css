@@ -92,7 +92,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .intro-message > .wrapper-for-zagolovok > h3 {
 	font-size: 24px;
-	line-height: 26px;
+	line-height: 30px;
 	font-weight: 400;
 	color:#fff;
 	margin-top: 10px;
@@ -104,6 +104,14 @@ body, h1, h2, h3, h4, h5, h6 {
 	margin-top:5%;
 	margin-bottom: 13%;
 }
+
+@media (max-width: 767px) {
+	.content-section-a h1, .content-section-b h1 {
+			font-size:1.8em;
+			line-height: 32px;
+	}
+}
+
 @media (max-width: 767px) {
 	.intro-message {
 		padding-bottom: 15%;
