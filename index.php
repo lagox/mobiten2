@@ -15,7 +15,6 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     }
 }
 ?>
- -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
