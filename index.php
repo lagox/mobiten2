@@ -1,4 +1,3 @@
-<!-- 
 <?php
 // если мы не знаем реферала
 if (!isset($_COOKIE['referer'])) {
@@ -26,7 +25,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     <meta name="author" content="">
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <title>ANTSPRO - профессиональная разработка мобильных приложений. Платформы iOS и Android. Заказная разработка ПО, аутсорсинг ИТ услуг и ИТ консалтинг</title>
+    <title>ANTSPRO - профессиональная разработка мобильных приложений и программного обеспечения. Платформы iOS и Android. Мы делаем под ключ: мобильные приложения, интернет-магазины, ПО для бизнеса. ИТ консалтинг</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
