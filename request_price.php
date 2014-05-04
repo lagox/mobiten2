@@ -72,6 +72,9 @@
    if (isset($_POST['email'])) {
       $email = $_POST['email'];
    }
+   if (isset($_POST['project-descript'])) {
+      $projectdescript = $_POST['project-descript'];
+   }
    
    if (empty($name))
    {
@@ -105,6 +108,7 @@
          $message = "Имя пославшего: $name \n"
          . "Телефон: $phone \n"
          . "Email: $email\n"
+         . "Информация о проекте: $projectdescript\n"
          . "Реферал: {$_COOKIE['referer']}\n";
          foreach ($_COOKIE as $key => $val) {
            if (0 === strpos($key, 'utm')) {

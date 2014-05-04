@@ -31,7 +31,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .intro-header {
 	/*padding-top: 30px; */
 	/* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	padding-bottom: 15px;
+	/*padding-bottom: 15px;*/
 	color: #000;
 	background: url(../img/wrapv2.jpg) no-repeat center center;
 	background-size: cover;
@@ -54,7 +54,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	z-index: 105;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.3);
 	padding-bottom: 10px;
 	padding-top:40px;
 }
@@ -436,6 +436,10 @@ color:#000;
 .presentation-button{
 	margin-top: 15px;
 	text-align: center;
+	font-size: 16px;
+}
+.presentation-button img{
+	width:32px;
 }
 #request-free-design{
 	margin-top:30px;
@@ -691,7 +695,7 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	padding-bottom: 10px !important;
 }
 .contacts-title{
-		text-align: center;
+	text-align: center;
 	font-weight: 500;
 	font-size: 2.5em;
 	line-height: 45px;
@@ -699,6 +703,7 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	/*padding: 20px 10px;*/
 	margin-bottom: 10px;
 	/*border: 4px solid #000;*/
+	margin-top: 40px;
 }
 
 .city-title{
@@ -792,7 +797,7 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 #map{
 	width: 100%;
-	height: 240px;
+	height: 340px;
 }
 .affix,.navbar-fixed-top{
 -webkit-transform: scale3d(1,1,1);
@@ -816,7 +821,8 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 
 #btn-request-project{
 	padding: 10px 5px;
-	font-size: 1.8em;
+	font-size: 1.2em;
+	font-weight: normal;
 	display: block;
 	color:#fff;
 	border: 4px solid #fff;
@@ -826,13 +832,12 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 #btn-request-project:hover{
 	padding: 10px 5px;
-	font-size: 1.8em;
 	display: block;
 	color:#fff;
 	border: 4px solid #fff;
 	width:300px;
 	margin:0 auto;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.6);
 	text-decoration: none;
 }
 .navbar ul{
@@ -842,4 +847,32 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	.navbar-right{
 		margin-left: 5px;
 	}
+}
+.raschet-one-title{
+	font-weight: normal;
+	font-size: 20px;
+}
+.raschet-two-title{
+	font-weight: normal;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.info-about-project{
+	height:100px !important;
+}
+.btn-ants-green{
+	padding: 10px 5px;
+	font-size: 1.2em;
+	font-weight: normal;
+	display: block;
+	color:#6bad2f;
+	border:2px solid #6bad2f;
+	width:340px;
+	margin:0 auto;
+	padding: 10px 5px;
+}
+.btn-ants-green:hover{
+	background: rgba(122,198,56,.2);
+	text-decoration: none;
+	color:#6bad2f;
 }
