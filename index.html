@@ -1,3 +1,4 @@
+<!-- 
 <?php
 // если мы не знаем реферала
 if (!isset($_COOKIE['referer'])) {
@@ -15,6 +16,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
     }
 }
 ?>
+ -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -379,6 +381,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                             <input type="text" name="phone" class="form-control" placeholder="Введите телефон*" required>
                         </div>
                         <div class="form-group">
+                            <div class="confide-main">
+                                <img src="img/lockicon.png"> Ваши контактные данные в безопасности и не будут переданы третьим лицам
+                            </div>
                             <button type="submit" class="btn btn-lg btn-yellow">Заказать расчет стоимости</button>
                         </div>
                     </form>
@@ -536,6 +541,9 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                             <textarea name="project-descript" class="form-control info-about-project" placeholder="Информация о проекте*" required></textarea>
                         </div>
                         <div class="form-group">
+                            <div class="confide-main">
+                                <img src="img/lockicon.png"> Ваши контактные данные в безопасности и не будут переданы третьим лицам
+                            </div>
                             <button type="submit" class="btn btn-lg btn-yellow">Заказать расчет стоимости</button>
                         </div>
                     </form>
@@ -612,6 +620,10 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                     <button type="button" class="btn btn-lg btn-yellow" id="request-call-button-2" data-toggle="modal" data-target="#requestCallModal" ><img src="img/tube.png"> Закажи звонок</button>
                     <div class="copy">
                         ANTSPRO – мобильные решения &copy; 2012-2014
+                    </div>
+                    <div class="footer-desc">
+                        <h2>Разработка мобильных приложений под платформы iOS и Android в Алматы, в Астане, в Москве.</h2>
+                        <h2>IT-аутсорсинг в сфере разработки мобильных приложений по всему миру</h2>
                     </div>
                 </div>
             </div>

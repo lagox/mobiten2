@@ -859,11 +859,11 @@ box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
 .raschet-one-title{
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 22px;
 }
 .raschet-two-title{
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 20px;
 }
 .info-about-project{
@@ -899,4 +899,20 @@ text-align: justify;
 }
 #server-dev-label{
 	margin-top: 30px;
+}
+.confide-main{
+	font-size:11px;
+	font-weight: normal;	
+	margin: 20px 0px;
+}
+.confide-main img{
+	position: relative;
+	top:-3px;
+	width:10px;
+	height:10px;
+}
+.footer-desc h2{
+	font-size: 12px;
+	line-height: 3px;
+	/*font-weight: normal;*/
 }
