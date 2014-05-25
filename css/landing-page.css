@@ -916,3 +916,20 @@ text-align: justify;
 	line-height: 16px;
 	/*font-weight: normal;*/
 }
+.choose-languages{
+	color:#dfdfdf;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top:20px;
+}
+.choose-languages a{
+	color:#dfdfdf;
+	text-decoration: underline;
+}
+.choose-languages a:hover{
+	text-decoration: none;
+	color:#dbdbdb;
+}
+.active-lang{
+	text-decoration: none !important;
+}

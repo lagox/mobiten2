@@ -114,6 +114,10 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                             <a id="logotip-link" href="index.php">
                                 <img src="img/logosmall.png" alt="ANTSPRO – мобильные решения" title="ANTSPRO – мобильные решения">
                             </a>
+                            <div class="choose-languages">
+                            <span class="active-lang">Rus</span> |
+                            <a href="en.html">Eng</a> 
+                        </div>
                         </div>
 
                     </div>
