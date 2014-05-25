@@ -117,7 +117,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                         </div>
                         <div class="choose-languages">
                             <span class="active-lang">Eng</span> | 
-                            <a href="index.html">Rus</a>
+                            <a href="index.php">Rus</a>
                         </div>
 
                     </div>
