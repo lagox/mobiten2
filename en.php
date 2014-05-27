@@ -111,7 +111,7 @@ if (isset($_GET['utm_source']) && !isset($_COOKIE['utm_source'])) {
                 <div class="container">
                     <div class="row">
                         <div class="text-center" id="logo">
-                            <a id="logotip-link" href="index.php">
+                            <a id="logotip-link" href="en.php">
                                 <img src="img/logosmall.png" alt="ANTSPRO – мобильные решения" title="ANTSPRO – мобильные решения">
                             </a>
                         </div>
